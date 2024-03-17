@@ -1,4 +1,4 @@
-# zad 1
+# ex 1
 
 k = 3
 repeats = 10000
@@ -29,7 +29,7 @@ for (i in 1:repeats ) {
 sucs <- sum(result_vec)
 print(paste("Simulated probability: ", sucs/repeats))
 
-# zad 2
+# ex 2
 n = 10
 repeats = 10000
 v <- runif(n * repeats)
@@ -41,7 +41,7 @@ y <- y / c(sqrt((1/12)/n))
 hist(y, probability = TRUE)
 hist(rnorm(repeats), probability = TRUE)
 
-#zad 4
+# ex 4
 TrafN = function(n)  {
   if (n > 6) return(0)
   repeats = 10000
@@ -82,7 +82,7 @@ Bankructwo = function(w3, w4, w5, w6, z, b, p) {
 
 # Bankructwo(24, 300, 10000, 1000000, 3000, 100, 3)
 
-# zad 5
+# ex 5
 # E[X] 
 repeats = 10000
 sum = 0
@@ -177,7 +177,7 @@ for (i in 1:repeats) {
 
 print(paste("Bound of P(T > 30): ", sucs / repeats))
 
-# zad 6
+# ex 6
 
 # states
 dead = 1
@@ -234,7 +234,7 @@ for (i in 1:repeats) {
 
 print(paste("Sick patient will be in hospital: ", years / repeats, " and it will cost ", cost / repeats))
 
-# zad 8
+# ex 8
 # Zadanie 4. Dwójka przyjaciół chodzi do szkoły razem. Każdy z nich niezależnie przybywa
 # na umówione skrzyżowanie o godzinie będącej zmienną losową z rozkładu jednostajnego
 # na przedziale 7 : 00 − 7 : 20 i czeka na kompana 5 minut. Po tym czasie jeśli przyjaciel
