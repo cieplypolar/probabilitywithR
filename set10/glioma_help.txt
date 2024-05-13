@@ -1,0 +1,47 @@
+glioma {coin}	R Documentation
+Malignant Glioma Pilot Study
+
+Description
+
+A non-randomized pilot study on malignant glioma patients with pretargeted adjuvant radioimmunotherapy using yttrium-90-biotin.
+
+Usage
+
+glioma
+Format
+
+A data frame with 37 observations on 7 variables.
+
+no.
+patient number.
+
+age
+patient age (years).
+
+sex
+a factor with levels "F" (Female) and "M" (Male).
+
+histology
+a factor with levels "GBM" (grade IV) and "Grade3" (grade III).
+
+group
+a factor with levels "Control" and "RIT".
+
+event
+status indicator for time: FALSE for censored observations and TRUE otherwise.
+
+time
+survival time (months).
+
+Details
+
+The primary endpoint of this small pilot study is survival. Since the survival times are tied, 
+the classical asymptotic logrank test may be inadequate in this setup. Therefore, a permutation test 
+using Monte Carlo resampling was computed in the original paper. 
+The data are taken from Tables 1 and 2 of Grana et al. (2002).
+
+Source
+
+Grana, C., Chinol, M., Robertson, C., Mazzetta, C., Bartolomei, M., De Cicco, C., Fiorenza, 
+M., Gatti, M., Caliceti, P. and Paganelli, G. (2002). Pretargeted adjuvant radioimmunotherapy with Yttrium-90-biotin 
+in malignant glioma patients: A pilot study. British Journal of Cancer 86(2), 207–212.
